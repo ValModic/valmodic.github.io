@@ -6,27 +6,22 @@
     <title>Kontakt</title>
     <link rel="stylesheet" href="mystyle.css">
 	<script src="script.js" defer></script>
+	<script>
+        function sendEmail() {
+            var message = document.getElementById("message").value;
+            var mailtoLink = "mailto:nekdo@domena.com?subject=Sporočilo&body=" + encodeURIComponent(message);
+            window.location.href = mailtoLink;
+        }
+    </script>
 </head>
 <body>
 
     <h1>Kontaktni obrazec</h1>
 
-    <form action="mailto:example@example.com" method="post" enctype="text/plain">
-        <label for="ime">Ime:</label>
-        <input type="text" id="ime" name="ime" required>
-        <br><br>
+  <label for="message">Sporočilo:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br><br>
 
-        <label for="email">E-naslov:</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
-
-        <label for="sporocilo">Sporočilo:</label>
-        <textarea id="sporocilo" name="sporocilo" rows="4" required></textarea>
-        <br><br>
-
-        <input type="submit" value="Pošlji">
-    </form>
-
+    <button type="button" onclick="sendEmail()">Pošlji</button>
     <h2>Interaktivni gumb</h2>
     <button id="klikniGumb">Klikni me!</button>
 
@@ -41,3 +36,4 @@
 
 </body>
 </html>
+
