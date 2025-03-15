@@ -1,48 +1,42 @@
 body {
-    background-color: #121212;
+    background: #121212;
     color: white;
-	text-align: center;
-    font-family: Inter, sans-serif, Impact;
-	font-size: 100%;
-	
+    text-align: center;
+    font: 100% Inter, sans-serif, Impact;
 }
 
 ul {
-            padding: 0;
-            margin: 0;
-            list-style: disc; /* Nastavi pikice */
-        }
+    padding: 0;
+    margin: 0;
+    list-style: disc;
+}
 
-        /* Za računalnike */
-        @media (min-width: 768px) {
-            ul {
-                margin: 0 auto; /* Poravnaj seznam na sredino */
-                width: 50%; /* Nastavi širino seznama */
-                text-align: center; /* Poravnaj besedilo na sredino */
-            }
-        }
+@media (min-width: 768px) {
+    ul {
+        margin: 0 auto;
+        width: 50%;
+    }
+}
 
-        /* Za telefone */
-        @media (max-width: 767px) {
-            ul {
-                text-align: left; /* Poravnaj besedilo na levo */
-                margin-left: 10px; /* Povečaj prostor za pikice */
-            }
-        }
+@media (max-width: 767px) {
+    ul {
+        text-align: left;
+        margin-left: 10px;
+    }
+}
 
-        li {
-            font-size: 18px; /* Velikost besedila */
-            margin-bottom: 10px; /* Razmik med alinejami */
-        }
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
 h1, h2, p, ul, li {
     text-align: center;
 }
 
-			
-
 .gumb {
     display: inline-block;
-    background-color: #765F72;
+    background: #765F72;
     color: white;
     padding: 12px 24px;
     font-size: 16px;
@@ -52,23 +46,15 @@ h1, h2, p, ul, li {
 }
 
 .gumb:hover {
-    background-color: #006dcc;
-}
-h1 {
-    margin-bottom: 20px;
+    background: #006dcc;
 }
 
-h2 {
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
+h1 { margin-bottom: 20px; }
+h2 { margin: 30px 0 15px; }
+p { line-height: 1.6; margin-bottom: 15px; }
 
-p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
 nav {
-    background-color: #222;
+    background: #222;
     padding: 15px;
     text-align: center;
     position: sticky;
@@ -78,9 +64,8 @@ nav {
 
 nav ul {
     list-style: none;
-    text-align: center;
     padding: 0;
-    background-color: #222;
+    background: #222;
 }
 
 nav ul li {
@@ -97,16 +82,14 @@ nav ul li a {
 nav ul li a:hover {
     color: #00aaff;
 }
-html {
-    scroll-behavior: smooth;
-}
 
+html { scroll-behavior: smooth; }
 
 #backToTop {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #ffcc00;
+    background: #ffcc00;
     color: black;
     padding: 10px 15px;
     border: none;
@@ -116,43 +99,37 @@ html {
     display: none;
 }
 
-#backToTop:hover {
-    background-color: #e6b800;
-}
+#backToTop:hover { background: #e6b800; }
+
 section {
-    padding-top: 80px; 
+    padding-top: 80px;
     margin-top: -50px;
 }
-img {
+
+img, video {
     width: 100%;
     max-width: 600px;
     height: auto;
     border-radius: 8px;
     margin: 20px 0;
 }
+
 video {
-	width: 400px;
-	height: 300px;
-	 border-radius: 2px;
+    width: 400px;
+    height: 300px;
+    border-radius: 2px;
     margin: 2px 0;
 }
+
 .table-container {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin: 20px 0;
 }
-textarea {
-    width: 50%;
-    margin: auto;
-    background: #222;
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-}
 
-input, textarea {
+textarea, input {
     width: 60%;
     padding: 10px;
     margin-top: 5px;
@@ -162,25 +139,29 @@ input, textarea {
     color: white;
 }
 
+textarea {
+    width: 50%;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 button {
     padding: 10px 20px;
-    background-color: #007BFF;
+    background: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
-}
+button:hover { background: #0056b3; }
 
 audio {
     display: block;
     margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #f4f4f4;
 }
-audio {
-  width: 90%; 
-  border-radius: 10px; 
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
-  background-color: #f4f4f4; 
