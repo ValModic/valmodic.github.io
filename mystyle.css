@@ -1,21 +1,45 @@
 body {
     background-color: #121212;
     color: white;
-    text-align: center;
+	text-align: center;
     font-family: Inter, sans-serif, Impact;
 	font-size: 100%;
+	
 }
 
+ul {
+            padding: 0;
+            margin: 0;
+            list-style: disc; /* Nastavi pikice */
+        }
 
-h1, h2, p, ul{
+        /* Za računalnike */
+        @media (min-width: 768px) {
+            ul {
+                margin: 0 auto; /* Poravnaj seznam na sredino */
+                width: 50%; /* Nastavi širino seznama */
+                text-align: center; /* Poravnaj besedilo na sredino */
+            }
+        }
+
+        /* Za telefone */
+        @media (max-width: 767px) {
+            ul {
+                text-align: left; /* Poravnaj besedilo na levo */
+                margin-left: 10px; /* Povečaj prostor za pikice */
+            }
+        }
+
+        li {
+            font-size: 18px; /* Velikost besedila */
+            margin-bottom: 10px; /* Razmik med alinejami */
+        }
+h1, h2, p, ul, li {
     text-align: center;
 }
-li {
-	   list-style-position: inside; /* Pikice bodo ob besedilu, ne zunaj */
-            margin: 0; /* Odstrani morebitne zunanje margine */
-            padding: 0; /* Odstrani notranje zamike */
+
 			
-}
+
 .gumb {
     display: inline-block;
     background-color: #765F72;
@@ -160,43 +184,4 @@ audio {
   border-radius: 10px; 
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
   background-color: #f4f4f4; 
-  
-        ul {
-            padding: 0;
-            margin: 0;
-            list-style-type: none; /* Odstrani privzete pikice */
-        }
-
-        li {
-            display: flex; /* Uporabi flexbox za alineje */
-            align-items: center; /* Centriraj pikico in besedilo */
-            position: relative; /* Potrebno za prilagajanje pikice */
-        }
-
-        li::before {
-            content: "•"; /* Nastavi pikico kot vsebino pred besedilom */
-            position: absolute; /* Postavi pikico na točno določeno mesto */
-            left: -20px; /* Premakni pikico na levo, da bo poravnana na sredini */
-            font-size: 24px; /* Nastavi velikost pikice */
-        }
-
-        span {
-            display: inline-block;
-            margin-left: 10px; /* Dodaj prostor med pikico in besedilom */
-        }
-
-        /* Na računalniku (večji zasloni) */
-        @media (min-width: 768px) {
-            ul {
-                text-align: center; /* Poravnaj seznam na sredino */
-            }
-        }
-
-        /* Na telefonih (manjši zasloni) */
-        @media (max-width: 767px) {
-            ul {
-                text-align: left; /* Poravnaj seznam na levo */
-                padding-left: 20px; /* Dodaj prostor na levi za poravnavo */
-            }
-        }
-    </style>
+ 
