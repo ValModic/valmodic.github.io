@@ -14,7 +14,7 @@ ul {
         }
 
         /* Za računalnike */
-        @media (min-width: 768px) {
+        @media (min-width: 601px) {
             ul {
                 margin: 0 auto; /* Poravnaj seznam na sredino */
                 width: 50%; /* Nastavi širino seznama */
@@ -23,7 +23,7 @@ ul {
         }
 
         /* Za telefone */
-        @media (max-width: 767px) {
+        @media (max-width: 600px) {
             ul {
                 text-align: left; /* Poravnaj besedilo na levo */
                 margin-left: 10px; /* Povečaj prostor za pikice */
