@@ -34,7 +34,7 @@ ul {
             font-size: 18px; /* Velikost besedila */
             margin-bottom: 10px; /* Razmik med alinejami */
         }
-h1, h2, p, ul, li {
+h1, h2, p,  {
     text-align: center;
 }
 
