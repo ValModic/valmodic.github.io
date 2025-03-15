@@ -161,7 +161,6 @@ audio {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
   background-color: #f4f4f4; 
   
-   <style>
         ul {
             padding: 0;
             margin: 0;
@@ -197,6 +196,7 @@ audio {
         @media (max-width: 767px) {
             ul {
                 text-align: left; /* Poravnaj seznam na levo */
+                padding-left: 20px; /* Dodaj prostor na levi za poravnavo */
             }
         }
     </style>
