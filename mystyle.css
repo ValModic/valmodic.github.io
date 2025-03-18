@@ -83,7 +83,7 @@ nav ul li a:hover {
     color: #00aaff;
 }
 
-head { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; }
 
 #backToTop {
     position: fixed;
